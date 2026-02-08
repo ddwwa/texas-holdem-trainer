@@ -274,33 +274,33 @@
 /* Tablets portrait (768px and below) */
 @media (max-width: 768px) {
   .player-seat {
-    gap: 0.2rem;
+    gap: 0.5vh;
   }
 
   .player-info {
-    padding: 0.25rem 0.5rem;
-    min-width: 70px;
-    font-size: 0.7rem;
+    padding: 0.5vh 1vw;
+    min-width: 18vw;
+    font-size: 2.5vw;
   }
 
   .player-name {
-    font-size: 0.7rem;
+    font-size: 2.5vw;
   }
 
   .dealer-button {
-    width: 14px;
-    height: 14px;
-    font-size: 0.6rem;
+    width: 4vw;
+    height: 4vw;
+    font-size: 2vw;
   }
 
   .blind-indicator {
-    font-size: 0.55rem;
-    padding: 0.05rem 0.2rem;
+    font-size: 2vw;
+    padding: 0.2vh 0.5vw;
   }
 
   .player-stack,
   .player-bet {
-    font-size: 0.7rem;
+    font-size: 2.5vw;
   }
 
   /* Adjust positions for smaller screens */

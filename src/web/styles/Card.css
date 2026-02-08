@@ -108,24 +108,22 @@
 /* Tablets portrait (768px and below) */
 @media (max-width: 768px) {
   .card {
-    width: 40px;
-    height: 56px;
-    font-size: 1.1rem;
-    border-radius: 4px;
+    width: 10vw;
+    height: 14vw;
+    font-size: 3vw;
+    border-radius: 1vw;
   }
 
   .card-rank {
-    font-size: 0.8rem;
-    top: 2px;
-    left: 4px;
+    font-size: 2.5vw;
   }
 
   .card-suit {
-    font-size: 1.4rem;
+    font-size: 4vw;
   }
 
   .card.face-down::after {
-    font-size: 1.5rem;
+    font-size: 5vw;
   }
 }
 

@@ -115,29 +115,30 @@
 @media (max-width: 768px) {
   .session-stats-top {
     position: static;
-    gap: 0.5rem;
-    padding: 0.25rem 0.5rem;
+    gap: 1vw;
+    padding: 0.5vh 1vw;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 0.7rem;
+    font-size: 2.5vw;
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba(251, 191, 36, 0.3);
     background: rgba(0, 0, 0, 0.5);
+    min-height: 4vh;
   }
   
   .session-stats-top .stat {
     flex-direction: row;
-    gap: 0.25rem;
+    gap: 1vw;
     align-items: center;
   }
   
   .session-stats-top .stat-label {
-    font-size: 0.65rem;
+    font-size: 2.5vw;
   }
   
   .session-stats-top .stat-value {
-    font-size: 0.75rem;
+    font-size: 3vw;
   }
 }
 
@@ -168,10 +169,11 @@
   .poker-table {
     flex: 1;
     aspect-ratio: auto;
-    border-radius: 40px;
-    border-width: 4px;
-    padding: 0.5rem;
+    border-radius: 5vw;
+    border-width: 1vw;
+    padding: 1vw;
     margin: 0;
+    min-height: 0;
   }
 }
 
@@ -822,5 +824,83 @@
 
   .showdown-winnings {
     font-size: 0.95rem;
+  }
+}
+
+
+/* Desktop only elements */
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .top-controls {
+    display: none !important;
+  }
+}
+
+/* Mobile Menu */
+.mobile-menu-container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-container {
+    display: block;
+    position: fixed;
+    top: 1vh;
+    right: 2vw;
+    z-index: 300;
+  }
+  
+  .mobile-menu-button {
+    background: rgba(251, 191, 36, 0.9);
+    border: none;
+    border-radius: 1vw;
+    padding: 1vh 3vw;
+    font-size: 5vw;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    min-height: 6vh;
+    min-width: 10vw;
+  }
+  
+  .mobile-menu-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 1vh;
+    background: rgba(0, 0, 0, 0.95);
+    border: 2px solid rgba(251, 191, 36, 0.5);
+    border-radius: 2vw;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    min-width: 30vw;
+  }
+  
+  .menu-item {
+    display: block;
+    width: 100%;
+    padding: 2vh 4vw;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+    color: #fff;
+    font-size: 3.5vw;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-item:active {
+    background: rgba(251, 191, 36, 0.2);
   }
 }

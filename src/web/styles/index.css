@@ -109,11 +109,12 @@ body {
 
 @media (max-width: 768px) {
   .app-header {
-    padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+    padding: 0.5vh;
+    min-height: 6vh;
   }
   
   .app-header h1 {
-    font-size: 1.2rem;
+    font-size: 4vw;
     margin-bottom: 0;
   }
   
@@ -126,8 +127,8 @@ body {
   }
   
   .app-main {
-    padding: 0.25rem;
-    height: calc(100vh - 60px);
+    padding: 0;
+    height: 94vh;
     overflow: hidden;
   }
 }

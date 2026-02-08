@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useGame } from '../context/GameContext';
 import PlayerSeat from './PlayerSeat';
 import CommunityCards from './CommunityCards';
@@ -10,6 +10,7 @@ import '../styles/PokerTable.css';
 
 function PokerTable() {
   const { gameState, startNewGame, startNewHand, sessionStats, isPlayerTurn, lastHandResult, actionLog, lastGTOSolution, lastComparison, playerLastActions, countdown } = useGame();
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   useEffect(() => {
     // Start a new game when component mounts
@@ -30,8 +31,28 @@ function PokerTable() {
 
   return (
     <div className="poker-table-container">
+      {/* Mobile Menu Button */}
+      <div className="mobile-menu-container">
+        <button 
+          className="mobile-menu-button"
+          onClick={() => setShowMobileMenu(!showMobileMenu)}
+        >
+          ☰
+        </button>
+        {showMobileMenu && (
+          <div className="mobile-menu-dropdown">
+            <button onClick={() => { startNewHand(); setShowMobileMenu(false); }} className="menu-item">
+              New Hand
+            </button>
+            <button onClick={() => { startNewGame(); setShowMobileMenu(false); }} className="menu-item">
+              New Game
+            </button>
+          </div>
+        )}
+      </div>
+
       {/* Top Right Control Panel */}
-      <div className="top-controls">
+      <div className="top-controls desktop-only">
         <button onClick={startNewHand} className="btn-control btn-new-hand-small">
           New Hand
         </button>
@@ -151,11 +172,13 @@ function PokerTable() {
       )}
 
       {/* GTO Analysis Panel */}
-      <GTOPanel 
-        visible={true} 
-        gtoSolution={lastGTOSolution} 
-        comparison={lastComparison}
-      />
+      <div className="desktop-only">
+        <GTOPanel 
+          visible={true} 
+          gtoSolution={lastGTOSolution} 
+          comparison={lastComparison}
+        />
+      </div>
 
       {/* Game Status Debug Panel */}
       <div className="game-status-panel">

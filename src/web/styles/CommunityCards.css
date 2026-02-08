@@ -108,22 +108,23 @@
 /* Tablets portrait (768px and below) */
 @media (max-width: 768px) {
   .community-cards {
-    gap: 0.3rem;
-    padding: 0.6rem;
-    min-height: 70px;
+    gap: 1vw;
+    padding: 1vh 1vw;
+    min-height: 16vw;
+    background: rgba(0, 0, 0, 0.3);
   }
 
   .community-label {
-    font-size: 0.8rem;
+    font-size: 2.5vw;
   }
 
   .flop-cards {
-    margin-right: 0.6rem;
+    margin-right: 1.5vw;
   }
 
   .turn-card,
   .river-card {
-    margin-left: 0.3rem;
+    margin-left: 1vw;
   }
 }
 

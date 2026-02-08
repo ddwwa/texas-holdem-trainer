@@ -25,12 +25,28 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
   color: #ffffff;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  body {
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .app {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .app-header {
@@ -40,6 +56,12 @@ body {
   backdrop-filter: blur(20px);
   border-bottom: 2px solid rgba(251, 191, 36, 0.3);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+  }
 }
 
 .app-header h1 {
@@ -87,25 +109,25 @@ body {
 
 @media (max-width: 768px) {
   .app-header {
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.75rem 0.5rem;
   }
   
   .app-header h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0;
   }
   
   .app-header h1::after {
-    font-size: 0.8rem;
-    bottom: -1rem;
-    letter-spacing: 0.3rem;
+    display: none;
   }
   
   .app-header p {
-    font-size: 0.85rem;
-    margin-top: 1rem;
+    display: none;
   }
   
   .app-main {
-    padding: 0.5rem;
+    padding: 0.25rem;
+    height: calc(100vh - 60px);
+    overflow: hidden;
   }
 }

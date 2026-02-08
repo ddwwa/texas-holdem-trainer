@@ -274,44 +274,44 @@
 /* Tablets portrait (768px and below) */
 @media (max-width: 768px) {
   .player-seat {
-    gap: 0.3rem;
+    gap: 0.2rem;
   }
 
   .player-info {
-    padding: 0.3rem 0.6rem;
-    min-width: 80px;
-    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    min-width: 70px;
+    font-size: 0.7rem;
   }
 
   .player-name {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .dealer-button {
-    width: 16px;
-    height: 16px;
-    font-size: 0.65rem;
+    width: 14px;
+    height: 14px;
+    font-size: 0.6rem;
   }
 
   .blind-indicator {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     padding: 0.05rem 0.2rem;
   }
 
   .player-stack,
   .player-bet {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   /* Adjust positions for smaller screens */
-  .position-0 { bottom: 3%; }
-  .position-1 { bottom: 12%; left: 10%; }
-  .position-2 { top: 25%; left: 3%; }
-  .position-3 { top: 8%; left: 20%; }
-  .position-4 { top: 3%; }
-  .position-5 { top: 8%; right: 20%; }
-  .position-6 { top: 25%; right: 3%; }
-  .position-7 { bottom: 12%; right: 10%; }
+  .position-0 { bottom: 2%; }
+  .position-1 { bottom: 10%; left: 8%; }
+  .position-2 { top: 22%; left: 2%; }
+  .position-3 { top: 6%; left: 18%; }
+  .position-4 { top: 2%; }
+  .position-5 { top: 6%; right: 18%; }
+  .position-6 { top: 22%; right: 2%; }
+  .position-7 { bottom: 10%; right: 8%; }
 }
 
 /* Mobile devices (480px and below) */

@@ -330,9 +330,11 @@
     padding: 1vh 1vw;
     border-radius: 3vw 3vw 0 0;
     gap: 1vw;
-    max-width: 100%;
+    max-width: 100vw;
+    width: 100vw;
     z-index: 200;
     max-height: 20vh;
+    box-sizing: border-box;
   }
 
   .btn {
@@ -347,6 +349,7 @@
     width: 100%;
     min-width: unset;
     padding: 1vh;
+    box-sizing: border-box;
   }
   
   .slider-value {
@@ -419,6 +422,9 @@
     padding: 0.5vh 1vw;
     max-height: 15vh;
     gap: 0.5vw;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
   }
   
   .btn {
@@ -429,6 +435,7 @@
   
   .bet-controls {
     padding: 0.5vh;
+    box-sizing: border-box;
   }
   
   .slider-value {

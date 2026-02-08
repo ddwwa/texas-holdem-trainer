@@ -1,0 +1,1 @@
+export { HandResolver } from './HandResolver';

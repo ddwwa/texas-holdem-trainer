@@ -1,0 +1,149 @@
+.community-cards {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  min-height: 100px;
+}
+
+.community-cards.empty {
+  border: 2px dashed #666;
+}
+
+.community-label {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.flop-cards,
+.turn-card,
+.river-card {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.flop-cards {
+  margin-right: 1rem;
+}
+
+.turn-card,
+.river-card {
+  margin-left: 0.5rem;
+}
+
+/* Highlighted card (used in winner's hand) */
+.highlighted-card {
+  position: relative;
+  animation: highlightPulse 1.5s ease-in-out infinite;
+}
+
+.highlighted-card::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffd700, #ffed4e, #ffd700);
+  z-index: -1;
+  box-shadow: 
+    0 0 20px rgba(255, 215, 0, 0.8),
+    0 0 40px rgba(255, 215, 0, 0.4);
+}
+
+@keyframes highlightPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Animation for dealing cards */
+@keyframes dealCard {
+  from {
+    transform: translateY(-100px) rotateY(180deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+.community-cards .card {
+  animation: dealCard 0.5s ease-out;
+}
+
+.community-cards .card:nth-child(1) { animation-delay: 0s; }
+.community-cards .card:nth-child(2) { animation-delay: 0.1s; }
+.community-cards .card:nth-child(3) { animation-delay: 0.2s; }
+.community-cards .card:nth-child(4) { animation-delay: 0.3s; }
+.community-cards .card:nth-child(5) { animation-delay: 0.4s; }
+
+/* Responsive Design */
+
+/* Tablets and smaller (1024px and below) */
+@media (max-width: 1024px) {
+  .community-cards {
+    gap: 0.4rem;
+    padding: 0.8rem;
+    min-height: 80px;
+  }
+
+  .flop-cards {
+    margin-right: 0.8rem;
+  }
+
+  .turn-card,
+  .river-card {
+    margin-left: 0.4rem;
+  }
+}
+
+/* Tablets portrait (768px and below) */
+@media (max-width: 768px) {
+  .community-cards {
+    gap: 0.3rem;
+    padding: 0.6rem;
+    min-height: 70px;
+  }
+
+  .community-label {
+    font-size: 0.8rem;
+  }
+
+  .flop-cards {
+    margin-right: 0.6rem;
+  }
+
+  .turn-card,
+  .river-card {
+    margin-left: 0.3rem;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .community-cards {
+    gap: 0.2rem;
+    padding: 0.4rem;
+    min-height: 55px;
+    flex-wrap: wrap;
+  }
+
+  .community-label {
+    font-size: 0.7rem;
+  }
+
+  .flop-cards,
+  .turn-card,
+  .river-card {
+    margin: 0;
+    gap: 0.2rem;
+  }
+}

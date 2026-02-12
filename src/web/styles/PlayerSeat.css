@@ -303,15 +303,15 @@
     font-size: 2.5vw;
   }
 
-  /* Adjust positions for smaller screens */
-  .position-0 { bottom: 25%; }
-  .position-1 { bottom: 20%; left: 8%; }
-  .position-2 { top: 22%; left: 2%; }
-  .position-3 { top: 8%; left: 18%; }
-  .position-4 { top: 4%; }
-  .position-5 { top: 8%; right: 18%; }
-  .position-6 { top: 22%; right: 2%; }
-  .position-7 { bottom: 20%; right: 8%; }
+  /* Adjust positions for smaller screens - maintain ellipse shape */
+  .position-0 { bottom: 12%; }
+  .position-1 { bottom: 18%; left: 10%; }
+  .position-2 { top: 28%; left: 3%; }
+  .position-3 { top: 12%; left: 20%; }
+  .position-4 { top: 6%; }
+  .position-5 { top: 12%; right: 20%; }
+  .position-6 { top: 28%; right: 3%; }
+  .position-7 { bottom: 18%; right: 10%; }
 }
 
 /* Mobile devices (480px and below) */
@@ -380,10 +380,15 @@
     font-size: 1.5vw;
   }
   
-  /* Adjust positions for landscape - keep bottom player visible above action panel */
-  .position-0 { bottom: 22%; }
-  .position-1 { bottom: 18%; left: 10%; }
-  .position-7 { bottom: 18%; right: 10%; }
+  /* Adjust positions for landscape - maintain ellipse shape with compact panel */
+  .position-0 { bottom: 10%; }
+  .position-1 { bottom: 14%; left: 12%; }
+  .position-2 { top: 32%; left: 4%; }
+  .position-3 { top: 14%; left: 22%; }
+  .position-4 { top: 8%; }
+  .position-5 { top: 14%; right: 22%; }
+  .position-6 { top: 32%; right: 4%; }
+  .position-7 { bottom: 14%; right: 12%; }
 }
   }
 }

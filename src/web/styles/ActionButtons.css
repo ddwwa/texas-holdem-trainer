@@ -323,53 +323,61 @@
 @media (max-width: 768px) {
   .action-buttons {
     position: fixed;
-    bottom: 2vh;
+    bottom: 1vh;
     left: 2vw;
     right: 2vw;
     margin: 0;
-    padding: 1vh 2vw;
-    border-radius: 3vw;
-    gap: 1.5vw;
+    padding: 1vh 1.5vw;
+    border-radius: 2vw;
+    gap: 1vw;
     max-width: 96vw;
     width: 96vw;
     z-index: 300;
     max-height: none;
     box-sizing: border-box;
-    background: linear-gradient(135deg, rgba(20, 20, 20, 0.98) 0%, rgba(10, 10, 10, 0.98) 100%);
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.92) 0%, rgba(10, 10, 10, 0.92) 100%);
+    backdrop-filter: blur(10px);
   }
 
   .btn {
-    padding: 1.5vh 2vw;
-    font-size: 3.5vw;
+    padding: 1.2vh 1.5vw;
+    font-size: 3vw;
     flex: 1;
-    min-width: 18vw;
-    min-height: 6vh;
-    font-weight: 800;
+    min-width: 16vw;
+    min-height: 5vh;
+    font-weight: 700;
   }
 
   .bet-controls {
     width: 100%;
     min-width: unset;
-    padding: 1vh 1.5vw;
+    padding: 0.8vh 1vw;
     box-sizing: border-box;
-    gap: 0.8vh;
+    gap: 0.5vh;
+  }
+  
+  .slider-container {
+    gap: 0.3vh;
+  }
+  
+  .bet-slider {
+    height: 5px;
   }
   
   .slider-value {
-    font-size: 4vw;
-    padding: 0.8vh;
-    font-weight: 800;
+    font-size: 3.5vw;
+    padding: 0.5vh;
+    font-weight: 700;
   }
   
   .pot-buttons {
-    gap: 1.5vw;
+    gap: 1vw;
   }
   
   .btn-pot-size {
-    font-size: 3vw;
-    padding: 1vh 2vw;
-    min-height: 5vh;
-    font-weight: 700;
+    font-size: 2.5vw;
+    padding: 0.8vh 1.5vw;
+    min-height: 4.5vh;
   }
 }
 
@@ -425,7 +433,7 @@
 @media (max-width: 926px) and (max-height: 428px) and (orientation: landscape) {
   .action-buttons {
     position: fixed;
-    bottom: 1vh;
+    bottom: 0.5vh;
     left: 1vw;
     right: 1vw;
     padding: 0.5vh 1vw;
@@ -434,21 +442,22 @@
     max-width: 98vw;
     box-sizing: border-box;
     border-radius: 1.5vw;
-    background: linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(10, 10, 10, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.9) 0%, rgba(10, 10, 10, 0.9) 100%);
+    backdrop-filter: blur(8px);
   }
   
   .btn {
-    padding: 1.2vh 1.5vw;
-    font-size: 2vw;
-    min-height: 6vh;
+    padding: 1vh 1.2vw;
+    font-size: 1.8vw;
+    min-height: 5vh;
     letter-spacing: 0;
     white-space: nowrap;
   }
   
   .bet-controls {
-    padding: 0.5vh 1vw;
+    padding: 0.4vh 0.8vw;
     box-sizing: border-box;
-    gap: 0.5vh;
+    gap: 0.3vh;
   }
   
   .slider-container {
@@ -460,8 +469,8 @@
   }
   
   .slider-value {
-    font-size: 2.5vw;
-    padding: 0.5vh;
+    font-size: 2.2vw;
+    padding: 0.4vh;
   }
   
   .pot-buttons {
@@ -469,14 +478,14 @@
   }
   
   .btn-pot-size {
-    font-size: 1.8vw;
-    padding: 1vh 1.5vw;
-    min-height: 5vh;
+    font-size: 1.6vw;
+    padding: 0.8vh 1.2vw;
+    min-height: 4.5vh;
   }
   
   .error-message {
-    top: -20px;
-    font-size: 1.8vw;
-    padding: 0.5vh 1vw;
+    top: -18px;
+    font-size: 1.6vw;
+    padding: 0.4vh 0.8vw;
   }
 }

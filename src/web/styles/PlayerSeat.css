@@ -304,14 +304,14 @@
   }
 
   /* Adjust positions for smaller screens */
-  .position-0 { bottom: 18%; }
-  .position-1 { bottom: 15%; left: 8%; }
+  .position-0 { bottom: 25%; }
+  .position-1 { bottom: 20%; left: 8%; }
   .position-2 { top: 22%; left: 2%; }
   .position-3 { top: 8%; left: 18%; }
   .position-4 { top: 4%; }
   .position-5 { top: 8%; right: 18%; }
   .position-6 { top: 22%; right: 2%; }
-  .position-7 { bottom: 15%; right: 8%; }
+  .position-7 { bottom: 20%; right: 8%; }
 }
 
 /* Mobile devices (480px and below) */
@@ -381,9 +381,9 @@
   }
   
   /* Adjust positions for landscape - keep bottom player visible above action panel */
-  .position-0 { bottom: 15%; }
-  .position-1 { bottom: 12%; left: 10%; }
-  .position-7 { bottom: 12%; right: 10%; }
+  .position-0 { bottom: 22%; }
+  .position-1 { bottom: 18%; left: 10%; }
+  .position-7 { bottom: 18%; right: 10%; }
 }
   }
 }

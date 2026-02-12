@@ -922,21 +922,21 @@
   
   .session-stats-top {
     min-height: 0;
-    padding: 0.2vh 0.8vw;
-    font-size: 1.3vw;
+    padding: 0.3vh 0.8vw;
+    font-size: 1.4vw;
   }
   
   .session-stats-top .stat-label {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
   }
   
   .session-stats-top .stat-value {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
   }
   
   .poker-table {
-    border-width: 0.2vw;
-    padding: 0.2vw;
+    border-width: 0.25vw;
+    padding: 0.3vw;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -947,17 +947,17 @@
   }
   
   .table-center {
-    transform: translate(-50%, -50%) scale(0.45);
+    transform: translate(-50%, -50%) scale(0.5);
   }
   
   .mobile-menu-button {
-    padding: 0.3vh 1.2vw;
-    font-size: 2vw;
-    min-height: 3vh;
+    padding: 0.4vh 1.3vw;
+    font-size: 2.2vw;
+    min-height: 3.5vh;
   }
   
   .menu-item {
-    padding: 0.6vh 2vw;
-    font-size: 1.8vw;
+    padding: 0.7vh 2.2vw;
+    font-size: 1.9vw;
   }
 }

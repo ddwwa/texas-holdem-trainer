@@ -922,42 +922,42 @@
   
   .session-stats-top {
     min-height: 0;
-    padding: 0.5vh 1vw;
-    font-size: 1.8vw;
+    padding: 0.2vh 0.8vw;
+    font-size: 1.3vw;
   }
   
   .session-stats-top .stat-label {
-    font-size: 1.8vw;
+    font-size: 1.3vw;
   }
   
   .session-stats-top .stat-value {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   
   .poker-table {
-    border-width: 0.5vw;
-    padding: 0.5vw;
+    border-width: 0.2vw;
+    padding: 0.2vw;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
   }
   
   .poker-table::before {
-    border-radius: 5vw;
+    border-radius: 3vw;
   }
   
   .table-center {
-    transform: translate(-50%, -50%) scale(0.65);
+    transform: translate(-50%, -50%) scale(0.45);
   }
   
   .mobile-menu-button {
-    padding: 0.5vh 2vw;
-    font-size: 3vw;
-    min-height: 4vh;
+    padding: 0.3vh 1.2vw;
+    font-size: 2vw;
+    min-height: 3vh;
   }
   
   .menu-item {
-    padding: 1vh 3vw;
-    font-size: 2.5vw;
+    padding: 0.6vh 2vw;
+    font-size: 1.8vw;
   }
 }

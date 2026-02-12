@@ -7,13 +7,13 @@
 
 @media (max-width: 768px) {
   .poker-table-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+    height: 100vh;
     width: 100vw;
     max-width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -117,17 +117,19 @@
 
 @media (max-width: 768px) {
   .session-stats-top {
-    position: static;
-    gap: 1vw;
-    padding: 0.3vh 1vw;
+    position: absolute;
+    top: 1vh;
+    left: 2vw;
+    right: 2vw;
+    gap: 2vw;
+    padding: 1vh 2vw;
     flex-direction: row;
     justify-content: space-around;
     font-size: 2.5vw;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(251, 191, 36, 0.3);
-    background: rgba(0, 0, 0, 0.5);
-    min-height: 3vh;
+    border-radius: 2vw;
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    z-index: 100;
   }
   
   .session-stats-top .stat {
@@ -170,15 +172,18 @@
 
 @media (max-width: 768px) {
   .poker-table {
-    flex: 1;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
     aspect-ratio: auto;
-    border-radius: 5vw;
-    border-width: 1vw;
-    padding: 1vw;
+    border-radius: 0;
+    border-width: 0;
+    padding: 2vw;
     margin: 0;
-    min-height: 0;
-    width: 100%;
-    max-width: 100%;
+    width: 100vw;
+    height: 95vh;
   }
 }
 
@@ -311,10 +316,17 @@
 /* Tablets portrait (768px and below) */
 @media (max-width: 768px) {
   .poker-table {
-    border-radius: 100px;
-    border-width: 6px;
-    padding: 1rem;
-    aspect-ratio: 4 / 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border-width: 0;
+    padding: 2vw;
+    aspect-ratio: auto;
   }
 
   .table-center {
@@ -918,46 +930,58 @@
     width: 100vw;
     overflow: hidden;
     max-width: 100vw;
+    position: relative;
   }
   
   .session-stats-top {
-    min-height: 0;
-    padding: 0.2vh 0.8vw;
-    font-size: 1.3vw;
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    right: 1vw;
+    padding: 0.8vh 2vw;
+    font-size: 1.8vw;
+    border-radius: 1.5vw;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
   }
   
   .session-stats-top .stat-label {
-    font-size: 1.3vw;
+    font-size: 1.8vw;
   }
   
   .session-stats-top .stat-value {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   
   .poker-table {
-    border-width: 0.2vw;
-    padding: 0.2vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+    height: 100%;
+    border-width: 0;
+    border-radius: 0;
+    padding: 2vw;
   }
   
   .poker-table::before {
-    border-radius: 3vw;
+    display: none;
   }
   
   .table-center {
-    transform: translate(-50%, -50%) scale(0.4);
+    transform: translate(-50%, -50%) scale(0.7);
   }
   
   .mobile-menu-button {
-    padding: 0.3vh 1vw;
-    font-size: 1.8vw;
-    min-height: 3vh;
+    padding: 0.8vh 2vw;
+    font-size: 2.2vw;
+    min-height: 5vh;
   }
   
   .menu-item {
-    padding: 0.5vh 1.8vw;
-    font-size: 1.6vw;
+    padding: 1vh 2.5vw;
+    font-size: 2vw;
   }
 }

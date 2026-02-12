@@ -327,9 +327,9 @@
     left: 1vw;
     right: 1vw;
     margin: 0;
-    padding: 0.5vh 1vw;
-    border-radius: 1.5vw;
-    gap: 0.8vw;
+    padding: 0.3vh 0.8vw;
+    border-radius: 1.2vw;
+    gap: 0.5vw;
     max-width: 98vw;
     width: 98vw;
     z-index: 300;
@@ -339,44 +339,44 @@
   }
 
   .btn {
-    padding: 0.8vh 1.2vw;
-    font-size: 2.5vw;
+    padding: 0.6vh 1vw;
+    font-size: 2.2vw;
     flex: 1;
-    min-width: 14vw;
-    min-height: 4vh;
+    min-width: 12vw;
+    min-height: 3.5vh;
     font-weight: 700;
   }
 
   .bet-controls {
     width: 100%;
     min-width: unset;
-    padding: 0.4vh 0.8vw;
+    padding: 0.2vh 0.5vw;
     box-sizing: border-box;
-    gap: 0.3vh;
-  }
-  
-  .slider-container {
     gap: 0.2vh;
   }
   
+  .slider-container {
+    gap: 0.1vh;
+  }
+  
   .bet-slider {
-    height: 4px;
+    height: 3px;
   }
   
   .slider-value {
-    font-size: 2.8vw;
-    padding: 0.3vh;
+    font-size: 2.2vw;
+    padding: 0.2vh;
     font-weight: 700;
   }
   
   .pot-buttons {
-    gap: 0.8vw;
+    gap: 0.5vw;
   }
   
   .btn-pot-size {
-    font-size: 2vw;
-    padding: 0.5vh 1vw;
-    min-height: 3.5vh;
+    font-size: 1.8vw;
+    padding: 0.4vh 0.8vw;
+    min-height: 3vh;
   }
 }
 
@@ -435,28 +435,28 @@
     bottom: 0.3vh;
     left: 1vw;
     right: 1vw;
-    padding: 0.3vh 0.8vw;
-    gap: 0.6vw;
+    padding: 0.2vh 0.6vw;
+    gap: 0.4vw;
     width: 98vw;
     max-width: 98vw;
     box-sizing: border-box;
-    border-radius: 1.2vw;
+    border-radius: 1vw;
     background: linear-gradient(135deg, rgba(20, 20, 20, 0.9) 0%, rgba(10, 10, 10, 0.9) 100%);
     backdrop-filter: blur(8px);
   }
   
   .btn {
-    padding: 0.7vh 1vw;
-    font-size: 1.6vw;
-    min-height: 4vh;
+    padding: 0.5vh 0.8vw;
+    font-size: 1.4vw;
+    min-height: 3.5vh;
     letter-spacing: 0;
     white-space: nowrap;
   }
   
   .bet-controls {
-    padding: 0.3vh 0.6vw;
+    padding: 0.2vh 0.4vw;
     box-sizing: border-box;
-    gap: 0.2vh;
+    gap: 0.1vh;
   }
   
   .slider-container {
@@ -464,27 +464,27 @@
   }
   
   .bet-slider {
-    height: 3px;
+    height: 2px;
   }
   
   .slider-value {
-    font-size: 1.8vw;
-    padding: 0.3vh;
+    font-size: 1.5vw;
+    padding: 0.2vh;
   }
   
   .pot-buttons {
-    gap: 0.6vw;
+    gap: 0.4vw;
   }
   
   .btn-pot-size {
-    font-size: 1.4vw;
-    padding: 0.6vh 1vw;
-    min-height: 3.5vh;
+    font-size: 1.2vw;
+    padding: 0.4vh 0.8vw;
+    min-height: 3vh;
   }
   
   .error-message {
-    top: -16px;
-    font-size: 1.4vw;
-    padding: 0.3vh 0.6vw;
+    top: -14px;
+    font-size: 1.2vw;
+    padding: 0.2vh 0.5vw;
   }
 }

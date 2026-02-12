@@ -116,7 +116,7 @@ body {
 @media (max-width: 768px) {
   .app-header {
     padding: 0.5vh;
-    min-height: 6vh;
+    min-height: 5vh;
   }
   
   .app-header h1 {
@@ -134,7 +134,7 @@ body {
   
   .app-main {
     padding: 0;
-    height: 94vh;
+    height: 95vh;
     overflow: hidden;
   }
 }
